@@ -1,0 +1,11 @@
+all:
+	-cd /home/utnso/so-commons-library && $(MAKE) all
+	-cd /home/utnso/so-commons-library && $(INSTALL) all
+	-cd /home/utnso/so-commons-library/ansisop-parser/parser && $(MAKE) all
+	-cd /home/utnso/so-commons-library/ansisop-parser/parser && $(INSTALL) all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug && $(MAKE) all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/Memoria/Debug && $(MAKE) all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/Kernel/Debug && $(MAKE) all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/FileSystem/Debug && $(MAKE) all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/CPU/Debug && $(MAKE) all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/Consola/Debug && $(MAKE) all

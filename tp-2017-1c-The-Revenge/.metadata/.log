@@ -1,0 +1,25 @@
+!SESSION 2017-07-15 08:11:52.223 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=es_AR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-15 08:12:44.752
+!MESSAGE Indexed 'Memoria' (2 sources, 82 headers) in 2,6 sec: 3.680 declarations; 8.667 references; 4 unresolved inclusions; 0 syntax errors; 89 unresolved names (0,72%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-15 08:12:51.556
+!MESSAGE Indexed 'Kernel' (7 sources, 91 headers) in 1,17 sec: 3.868 declarations; 9.080 references; 14 unresolved inclusions; 0 syntax errors; 1.102 unresolved names (7,8%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-15 08:12:58.397
+!MESSAGE Indexed 'CPU' (3 sources, 79 headers) in 0,934 sec: 3.198 declarations; 5.157 references; 3 unresolved inclusions; 0 syntax errors; 533 unresolved names (6%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-15 08:13:09.646
+!MESSAGE Indexed 'Consola' (2 sources, 88 headers) in 0,977 sec: 3.718 declarations; 7.808 references; 4 unresolved inclusions; 0 syntax errors; 48 unresolved names (0,41%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-15 08:13:18.358
+!MESSAGE Indexed 'tr_library' (3 sources, 76 headers) in 1,33 sec: 2.979 declarations; 5.510 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-07-15 08:13:36.071
+!MESSAGE Indexed 'FileSystem' (2 sources, 127 headers) in 1,35 sec: 4.338 declarations; 6.216 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

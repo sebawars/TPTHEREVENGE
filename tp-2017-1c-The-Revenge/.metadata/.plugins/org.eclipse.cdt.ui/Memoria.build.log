@@ -1,0 +1,96 @@
+08:13:51 **** Build of configuration Debug for project Memoria ****
+make all 
+Building file: ../src/Memoria.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Memoria.d" -MT"src/Memoria.d" -o "src/Memoria.o" "../src/Memoria.c"
+../src/Memoria.c: In function ‘solicitarBytesMemoria’:
+../src/Memoria.c:214:14: warning: initialization makes pointer from integer without a cast [enabled by default]
+  void* aux = -1;
+              ^
+../src/Memoria.c: In function ‘solicitarBytesCache’:
+../src/Memoria.c:266:2: warning: return makes pointer from integer without a cast [enabled by default]
+  return indice;
+  ^
+../src/Memoria.c: In function ‘obtenerEntradaPagXProc’:
+../src/Memoria.c:320:2: warning: return makes pointer from integer without a cast [enabled by default]
+  return -1;
+  ^
+../src/Memoria.c: In function ‘solicitarBytes’:
+../src/Memoria.c:391:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:410:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:432:4: warning: return makes pointer from integer without a cast [enabled by default]
+    return -1;
+    ^
+../src/Memoria.c:436:3: warning: return makes pointer from integer without a cast [enabled by default]
+   return -1;
+   ^
+../src/Memoria.c: In function ‘almacenarBytes’:
+../src/Memoria.c:447:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:455:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:467:3: warning: return makes pointer from integer without a cast [enabled by default]
+   return -1;
+   ^
+../src/Memoria.c: In function ‘dumpCache’:
+../src/Memoria.c:569:14: warning: unused variable ‘tamanioCache’ [-Wunused-variable]
+  uint32_t i, tamanioCache = list_size(cacheOcupada);
+              ^
+../src/Memoria.c: In function ‘dumpContenido’:
+../src/Memoria.c:686:19: warning: unused variable ‘aux2’ [-Wunused-variable]
+  paginasXproceso* aux2;
+                   ^
+../src/Memoria.c: In function ‘dumpContenidoPid’:
+../src/Memoria.c:736:19: warning: unused variable ‘aux2’ [-Wunused-variable]
+  paginasXproceso* aux2;
+                   ^
+../src/Memoria.c: In function ‘flushCache’:
+../src/Memoria.c:782:11: warning: unused variable ‘i’ [-Wunused-variable]
+  uint32_t i;
+           ^
+../src/Memoria.c: In function ‘sizePid’:
+../src/Memoria.c:832:20: warning: comparison between pointer and integer [enabled by default]
+  if(entradaProceso != -1)
+                    ^
+../src/Memoria.c: In function ‘atenderKernel’:
+../src/Memoria.c:956:9: warning: implicit declaration of function ‘solicitudPaginas_deserializer’ [-Wimplicit-function-declaration]
+         solicitudPaginas = solicitudPaginas_deserializer(buffer);
+         ^
+../src/Memoria.c:956:26: warning: assignment makes pointer from integer without a cast [enabled by default]
+         solicitudPaginas = solicitudPaginas_deserializer(buffer);
+                          ^
+../src/Memoria.c:1040:28: warning: assignment makes pointer from integer without a cast [enabled by default]
+           solicitudPaginas = solicitudPaginas_deserializer(buffer);
+                            ^
+../src/Memoria.c: In function ‘recibirConexiones’:
+../src/Memoria.c:1259:4: warning: implicit declaration of function ‘pthread_create’ [-Wimplicit-function-declaration]
+    hret = pthread_create(&h_Client, NULL, (void*) atenderConexion, (void*) client);
+    ^
+../src/Memoria.c: In function ‘main’:
+../src/Memoria.c:1417:2: warning: implicit declaration of function ‘pthread_join’ [-Wimplicit-function-declaration]
+  pthread_join(h_EscuchaConexiones, NULL);
+  ^
+../src/Memoria.c:1398:11: warning: unused variable ‘retTec’ [-Wunused-variable]
+  uint32_t retTec;
+           ^
+Finished building: ../src/Memoria.c
+ 
+Building file: ../src/configMemoria.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configMemoria.d" -MT"src/configMemoria.d" -o "src/configMemoria.o" "../src/configMemoria.c"
+Finished building: ../src/configMemoria.c
+ 
+Building target: Memoria
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "Memoria"  ./src/Memoria.o ./src/configMemoria.o   -ltr_library -lm -lcommons -lpthread
+Finished building target: Memoria
+ 
+
+08:13:52 Build Finished (took 1s.112ms)
+

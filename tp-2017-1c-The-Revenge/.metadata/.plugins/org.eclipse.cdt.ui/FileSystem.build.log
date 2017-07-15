@@ -1,0 +1,73 @@
+08:13:50 **** Build of configuration Debug for project FileSystem ****
+make all 
+Building file: ../src/FileSystem.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FileSystem.d" -MT"src/FileSystem.d" -o "src/FileSystem.o" "../src/FileSystem.c"
+../src/FileSystem.c: In function ‘main’:
+../src/FileSystem.c:32:7: warning: variable ‘cant’ set but not used [-Wunused-but-set-variable]
+   int cant;
+       ^
+../src/FileSystem.c: In function ‘guardarBitArray’:
+../src/FileSystem.c:109:7: warning: variable ‘b’ set but not used [-Wunused-but-set-variable]
+   int b;
+       ^
+../src/FileSystem.c:120:7: warning: variable ‘b’ set but not used [-Wunused-but-set-variable]
+   int b;
+       ^
+../src/FileSystem.c: In function ‘abrirBitmap’:
+../src/FileSystem.c:146:6: warning: unused variable ‘escritos’ [-Wunused-variable]
+  int escritos;
+      ^
+../src/FileSystem.c: In function ‘crearBitmap’:
+../src/FileSystem.c:161:6: warning: variable ‘escritos’ set but not used [-Wunused-but-set-variable]
+  int escritos;
+      ^
+../src/FileSystem.c: In function ‘validarArchivo’:
+../src/FileSystem.c:185:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘crearArchivo’:
+../src/FileSystem.c:219:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘borrarArchivo’:
+../src/FileSystem.c:279:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘obtenerDatos’:
+../src/FileSystem.c:319:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘guardarDatos’:
+../src/FileSystem.c:357:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘escribirDatosBin’:
+../src/FileSystem.c:624:18: warning: variable ‘disponible’ set but not used [-Wunused-but-set-variable]
+  int resto=*size,disponible;
+                  ^
+../src/FileSystem.c: In function ‘validarArchivoSinEnvio’:
+../src/FileSystem.c:692:21: warning: unused variable ‘resultado’ [-Wunused-variable]
+   t_validarArchivo* resultado;
+                     ^
+../src/FileSystem.c:689:7: warning: unused variable ‘nbytes’ [-Wunused-variable]
+   int nbytes;
+       ^
+../src/FileSystem.c:686:11: warning: variable ‘header’ set but not used [-Wunused-but-set-variable]
+  header_t header;
+           ^
+Finished building: ../src/FileSystem.c
+ 
+Building file: ../src/configFS.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configFS.d" -MT"src/configFS.d" -o "src/configFS.o" "../src/configFS.c"
+Finished building: ../src/configFS.c
+ 
+Building target: FileSystem
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "FileSystem"  ./src/FileSystem.o ./src/configFS.o   -ltr_library -lcommons
+Finished building target: FileSystem
+ 
+
+08:13:51 Build Finished (took 1s.109ms)
+

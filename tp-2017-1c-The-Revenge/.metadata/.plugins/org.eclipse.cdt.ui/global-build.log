@@ -1,0 +1,786 @@
+08:13:48 **** Clean-only build of configuration Debug for project tr_library ****
+make clean 
+rm -rf  ./Sockets/SocketsCliente.o ./Sockets/SocketsServidor.o ./Sockets/socket.o  ./Sockets/SocketsCliente.d ./Sockets/SocketsServidor.d ./Sockets/socket.d  libtr_library.so
+ 
+08:13:48 **** Incremental Build of configuration Debug for project tr_library ****
+make all 
+Building file: ../Sockets/Serializer.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -fPIC -MMD -MP -MF"Sockets/Serializer.d" -MT"Sockets/Serializer.d" -o "Sockets/Serializer.o" "../Sockets/Serializer.c"
+../Sockets/Serializer.c: In function ‘guardarDatosDesSerializer’:
+../Sockets/Serializer.c:809:30: warning: unused variable ‘len’ [-Wunused-variable]
+  int offset = 0, tamAux = 0, len;
+                              ^
+../Sockets/Serializer.c: In function ‘obtenerDatosDesSerializer’:
+../Sockets/Serializer.c:866:30: warning: unused variable ‘len’ [-Wunused-variable]
+  int offset = 0, tamAux = 0, len;
+                              ^
+Finished building: ../Sockets/Serializer.c
+ 
+Building file: ../Sockets/SocketsCliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -fPIC -MMD -MP -MF"Sockets/SocketsCliente.d" -MT"Sockets/SocketsCliente.d" -o "Sockets/SocketsCliente.o" "../Sockets/SocketsCliente.c"
+Finished building: ../Sockets/SocketsCliente.c
+ 
+Building file: ../Sockets/socket.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -fPIC -MMD -MP -MF"Sockets/socket.d" -MT"Sockets/socket.d" -o "Sockets/socket.o" "../Sockets/socket.c"
+Finished building: ../Sockets/socket.c
+ 
+Building target: libtr_library.so
+Invoking: GCC C Linker
+gcc -shared -o "libtr_library.so"  ./Sockets/Serializer.o ./Sockets/SocketsCliente.o ./Sockets/socket.o   
+Finished building target: libtr_library.so
+ 
+08:13:49 **** Clean-only build of configuration Debug for project FileSystem ****
+make clean 
+rm -rf  ./src/FileSystem.o ./src/configFS.o  ./src/FileSystem.d ./src/configFS.d  FileSystem
+ 
+08:13:50 **** Build of configuration Debug for project FileSystem ****
+make all 
+Building file: ../src/FileSystem.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FileSystem.d" -MT"src/FileSystem.d" -o "src/FileSystem.o" "../src/FileSystem.c"
+../src/FileSystem.c: In function ‘main’:
+../src/FileSystem.c:32:7: warning: variable ‘cant’ set but not used [-Wunused-but-set-variable]
+   int cant;
+       ^
+../src/FileSystem.c: In function ‘guardarBitArray’:
+../src/FileSystem.c:109:7: warning: variable ‘b’ set but not used [-Wunused-but-set-variable]
+   int b;
+       ^
+../src/FileSystem.c:120:7: warning: variable ‘b’ set but not used [-Wunused-but-set-variable]
+   int b;
+       ^
+../src/FileSystem.c: In function ‘abrirBitmap’:
+../src/FileSystem.c:146:6: warning: unused variable ‘escritos’ [-Wunused-variable]
+  int escritos;
+      ^
+../src/FileSystem.c: In function ‘crearBitmap’:
+../src/FileSystem.c:161:6: warning: variable ‘escritos’ set but not used [-Wunused-but-set-variable]
+  int escritos;
+      ^
+../src/FileSystem.c: In function ‘validarArchivo’:
+../src/FileSystem.c:185:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘crearArchivo’:
+../src/FileSystem.c:219:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘borrarArchivo’:
+../src/FileSystem.c:279:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘obtenerDatos’:
+../src/FileSystem.c:319:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘guardarDatos’:
+../src/FileSystem.c:357:6: warning: variable ‘nbytes’ set but not used [-Wunused-but-set-variable]
+  int nbytes;
+      ^
+../src/FileSystem.c: In function ‘escribirDatosBin’:
+../src/FileSystem.c:624:18: warning: variable ‘disponible’ set but not used [-Wunused-but-set-variable]
+  int resto=*size,disponible;
+                  ^
+../src/FileSystem.c: In function ‘validarArchivoSinEnvio’:
+../src/FileSystem.c:692:21: warning: unused variable ‘resultado’ [-Wunused-variable]
+   t_validarArchivo* resultado;
+                     ^
+../src/FileSystem.c:689:7: warning: unused variable ‘nbytes’ [-Wunused-variable]
+   int nbytes;
+       ^
+../src/FileSystem.c:686:11: warning: variable ‘header’ set but not used [-Wunused-but-set-variable]
+  header_t header;
+           ^
+Finished building: ../src/FileSystem.c
+ 
+Building file: ../src/configFS.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configFS.d" -MT"src/configFS.d" -o "src/configFS.o" "../src/configFS.c"
+Finished building: ../src/configFS.c
+ 
+Building target: FileSystem
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "FileSystem"  ./src/FileSystem.o ./src/configFS.o   -ltr_library -lcommons
+Finished building target: FileSystem
+ 
+08:13:51 **** Build of configuration Debug for project tr_library ****
+make all 
+make: No se hace nada para «all».
+08:13:51 **** Build of configuration Debug for project Memoria ****
+make all 
+Building file: ../src/Memoria.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Memoria.d" -MT"src/Memoria.d" -o "src/Memoria.o" "../src/Memoria.c"
+../src/Memoria.c: In function ‘solicitarBytesMemoria’:
+../src/Memoria.c:214:14: warning: initialization makes pointer from integer without a cast [enabled by default]
+  void* aux = -1;
+              ^
+../src/Memoria.c: In function ‘solicitarBytesCache’:
+../src/Memoria.c:266:2: warning: return makes pointer from integer without a cast [enabled by default]
+  return indice;
+  ^
+../src/Memoria.c: In function ‘obtenerEntradaPagXProc’:
+../src/Memoria.c:320:2: warning: return makes pointer from integer without a cast [enabled by default]
+  return -1;
+  ^
+../src/Memoria.c: In function ‘solicitarBytes’:
+../src/Memoria.c:391:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:410:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:432:4: warning: return makes pointer from integer without a cast [enabled by default]
+    return -1;
+    ^
+../src/Memoria.c:436:3: warning: return makes pointer from integer without a cast [enabled by default]
+   return -1;
+   ^
+../src/Memoria.c: In function ‘almacenarBytes’:
+../src/Memoria.c:447:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:455:9: warning: comparison between pointer and integer [enabled by default]
+   if(aux!=-1)
+         ^
+../src/Memoria.c:467:3: warning: return makes pointer from integer without a cast [enabled by default]
+   return -1;
+   ^
+../src/Memoria.c: In function ‘dumpCache’:
+../src/Memoria.c:569:14: warning: unused variable ‘tamanioCache’ [-Wunused-variable]
+  uint32_t i, tamanioCache = list_size(cacheOcupada);
+              ^
+../src/Memoria.c: In function ‘dumpContenido’:
+../src/Memoria.c:686:19: warning: unused variable ‘aux2’ [-Wunused-variable]
+  paginasXproceso* aux2;
+                   ^
+../src/Memoria.c: In function ‘dumpContenidoPid’:
+../src/Memoria.c:736:19: warning: unused variable ‘aux2’ [-Wunused-variable]
+  paginasXproceso* aux2;
+                   ^
+../src/Memoria.c: In function ‘flushCache’:
+../src/Memoria.c:782:11: warning: unused variable ‘i’ [-Wunused-variable]
+  uint32_t i;
+           ^
+../src/Memoria.c: In function ‘sizePid’:
+../src/Memoria.c:832:20: warning: comparison between pointer and integer [enabled by default]
+  if(entradaProceso != -1)
+                    ^
+../src/Memoria.c: In function ‘atenderKernel’:
+../src/Memoria.c:956:9: warning: implicit declaration of function ‘solicitudPaginas_deserializer’ [-Wimplicit-function-declaration]
+         solicitudPaginas = solicitudPaginas_deserializer(buffer);
+         ^
+../src/Memoria.c:956:26: warning: assignment makes pointer from integer without a cast [enabled by default]
+         solicitudPaginas = solicitudPaginas_deserializer(buffer);
+                          ^
+../src/Memoria.c:1040:28: warning: assignment makes pointer from integer without a cast [enabled by default]
+           solicitudPaginas = solicitudPaginas_deserializer(buffer);
+                            ^
+../src/Memoria.c: In function ‘recibirConexiones’:
+../src/Memoria.c:1259:4: warning: implicit declaration of function ‘pthread_create’ [-Wimplicit-function-declaration]
+    hret = pthread_create(&h_Client, NULL, (void*) atenderConexion, (void*) client);
+    ^
+../src/Memoria.c: In function ‘main’:
+../src/Memoria.c:1417:2: warning: implicit declaration of function ‘pthread_join’ [-Wimplicit-function-declaration]
+  pthread_join(h_EscuchaConexiones, NULL);
+  ^
+../src/Memoria.c:1398:11: warning: unused variable ‘retTec’ [-Wunused-variable]
+  uint32_t retTec;
+           ^
+Finished building: ../src/Memoria.c
+ 
+Building file: ../src/configMemoria.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configMemoria.d" -MT"src/configMemoria.d" -o "src/configMemoria.o" "../src/configMemoria.c"
+Finished building: ../src/configMemoria.c
+ 
+Building target: Memoria
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "Memoria"  ./src/Memoria.o ./src/configMemoria.o   -ltr_library -lm -lcommons -lpthread
+Finished building target: Memoria
+ 
+08:13:53 **** Clean-only build of configuration Debug for project Kernel ****
+make clean 
+rm -rf  ./src/Kernel.o ./src/configInicialKernel.o  ./src/Kernel.d ./src/configInicialKernel.d  Kernel
+ 
+08:13:53 **** Build of configuration Debug for project Kernel ****
+make all 
+Building file: ../src/Kernel.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Kernel.d" -MT"src/Kernel.d" -o "src/Kernel.o" "../src/Kernel.c"
+../src/Kernel.c: In function ‘crearPCB’:
+../src/Kernel.c:234:6: warning: variable ‘bytesEnviados’ set but not used [-Wunused-but-set-variable]
+  int bytesEnviados;
+      ^
+../src/Kernel.c: In function ‘inicializarPrograma’:
+../src/Kernel.c:307:2: warning: implicit declaration of function ‘solicitudPaginas_serializer’ [-Wimplicit-function-declaration]
+  char *notificacion_solicitudPaginas = solicitudPaginas_serializer(iniciarPrograma,&header.length);
+  ^
+../src/Kernel.c:307:40: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *notificacion_solicitudPaginas = solicitudPaginas_serializer(iniciarPrograma,&header.length);
+                                        ^
+../src/Kernel.c: In function ‘operacionConArchivos’:
+../src/Kernel.c:510:6: warning: pointer targets in passing argument 1 of ‘uint32_serializer’ differ in signedness [-Wpointer-sign]
+      char *mensaje=uint32_serializer(&fd,&header.length);
+      ^
+In file included from ../src/Kernel.c:9:0:
+/home/utnso/tp-2017-1c-The-Revenge/tr_library/Sockets/Serializer.h:19:8: note: expected ‘uint32_t *’ but argument is of type ‘int *’
+ char * uint32_serializer(uint32_t * self,uint32_t* length);
+        ^
+../src/Kernel.c: At top level:
+../src/Kernel.c:671:8: warning: "/*" within comment [-Wcomment]
+  int i;/*
+ ^
+../src/Kernel.c: In function ‘operacionConVariableCompartida’:
+../src/Kernel.c:686:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+../src/Kernel.c: In function ‘operacionesConSemaforos’:
+../src/Kernel.c:816:15: warning: unused variable ‘programa’ [-Wunused-variable]
+        t_PCB *programa =list_remove_by_condition(colaExec, (void*) _tieneElPid);
+               ^
+../src/Kernel.c:895:46: warning: assignment from incompatible pointer type [enabled by default]
+         pcbBloqueado->pcb->punteroColaPlanif = colaReady;
+                                              ^
+Finished building: ../src/Kernel.c
+ 
+Building file: ../src/capaFileSystem.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capaFileSystem.d" -MT"src/capaFileSystem.d" -o "src/capaFileSystem.o" "../src/capaFileSystem.c"
+../src/capaFileSystem.c: In function ‘validarArchivo’:
+../src/capaFileSystem.c:327:2: warning: implicit declaration of function ‘validarArchivoSerializer’ [-Wimplicit-function-declaration]
+  amandar=validarArchivoSerializer(opera,&cabeza->length);
+  ^
+../src/capaFileSystem.c:327:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+  amandar=validarArchivoSerializer(opera,&cabeza->length);
+         ^
+../src/capaFileSystem.c:336:3: warning: implicit declaration of function ‘validarArchivoDesSerializer’ [-Wimplicit-function-declaration]
+   resultado=validarArchivoDesSerializer(recibido);
+   ^
+../src/capaFileSystem.c:336:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+   resultado=validarArchivoDesSerializer(recibido);
+            ^
+../src/capaFileSystem.c: In function ‘crearArhivoFS’:
+../src/capaFileSystem.c:378:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+  amandar=validarArchivoSerializer(opera,&cabeza.length);
+         ^
+../src/capaFileSystem.c:387:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+   resultado=validarArchivoDesSerializer(recibido);
+            ^
+../src/capaFileSystem.c: In function ‘borrarArchivoFS’:
+../src/capaFileSystem.c:426:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+   amandar=validarArchivoSerializer(opera,&cabeza.length);
+          ^
+../src/capaFileSystem.c:435:14: warning: assignment makes pointer from integer without a cast [enabled by default]
+     resultado=validarArchivoDesSerializer(recibido);
+              ^
+../src/capaFileSystem.c: In function ‘guardarDatosFS’:
+../src/capaFileSystem.c:484:2: warning: implicit declaration of function ‘guardarDatosSerializer’ [-Wimplicit-function-declaration]
+  aMandar=guardarDatosSerializer(opera,&cabeza.length);
+  ^
+../src/capaFileSystem.c:484:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+  aMandar=guardarDatosSerializer(opera,&cabeza.length);
+         ^
+../src/capaFileSystem.c:493:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+   resultado=validarArchivoDesSerializer(recibido);
+            ^
+../src/capaFileSystem.c: In function ‘obtenerDatos’:
+../src/capaFileSystem.c:550:2: warning: implicit declaration of function ‘obtenerDatosSerializer’ [-Wimplicit-function-declaration]
+  aMandar=obtenerDatosSerializer(operacion,&cabeza.length);
+  ^
+../src/capaFileSystem.c:550:9: warning: assignment makes pointer from integer without a cast [enabled by default]
+  aMandar=obtenerDatosSerializer(operacion,&cabeza.length);
+         ^
+../src/capaFileSystem.c:563:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+   resultado=validarArchivoDesSerializer(recibido);
+            ^
+Finished building: ../src/capaFileSystem.c
+ 
+Building file: ../src/capaMemoria.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/capaMemoria.d" -MT"src/capaMemoria.d" -o "src/capaMemoria.o" "../src/capaMemoria.c"
+../src/capaMemoria.c: In function ‘superaMaximoAsignacion’:
+../src/capaMemoria.c:39:2: warning: implicit declaration of function ‘pedirPaginaAMemoria’ [-Wimplicit-function-declaration]
+  int resultado=pedirPaginaAMemoria(pid,1,socketMemoria);
+  ^
+../src/capaMemoria.c: In function ‘enviarPunteroACPU’:
+../src/capaMemoria.c:186:2: warning: implicit declaration of function ‘uint32_serializer’ [-Wimplicit-function-declaration]
+  mensaje = uint32_serializer(&offsetADevolver,&header.length);
+  ^
+../src/capaMemoria.c:186:10: warning: assignment makes pointer from integer without a cast [enabled by default]
+  mensaje = uint32_serializer(&offsetADevolver,&header.length);
+          ^
+../src/capaMemoria.c: In function ‘operacionesHeap’:
+../src/capaMemoria.c:315:3: warning: implicit declaration of function ‘solicitudHeap_deserializer’ [-Wimplicit-function-declaration]
+   datosHeap = solicitudHeap_deserializer(mensaje);
+   ^
+../src/capaMemoria.c:315:13: warning: assignment makes pointer from integer without a cast [enabled by default]
+   datosHeap = solicitudHeap_deserializer(mensaje);
+             ^
+../src/capaMemoria.c: In function ‘almacenar’:
+../src/capaMemoria.c:689:2: warning: implicit declaration of function ‘solicitudEscritura_serializer’ [-Wimplicit-function-declaration]
+  char * serializer = solicitudEscritura_serializer(mensaje,&header.length);
+  ^
+../src/capaMemoria.c:689:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char * serializer = solicitudEscritura_serializer(mensaje,&header.length);
+                      ^
+Finished building: ../src/capaMemoria.c
+ 
+Building file: ../src/conexiones.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/conexiones.d" -MT"src/conexiones.d" -o "src/conexiones.o" "../src/conexiones.c"
+../src/conexiones.c: In function ‘recvPid’:
+../src/conexiones.c:23:2: warning: implicit declaration of function ‘uint32_deserializer’ [-Wimplicit-function-declaration]
+  uint32_t *pid=uint32_deserializer(spid);
+  ^
+../src/conexiones.c:23:16: warning: initialization makes pointer from integer without a cast [enabled by default]
+  uint32_t *pid=uint32_deserializer(spid);
+                ^
+../src/conexiones.c: In function ‘agregarCPULibre’:
+../src/conexiones.c:48:25: warning: assignment makes integer from pointer without a cast [enabled by default]
+  cpuNueva->PidEjecutando=NULL;
+                         ^
+../src/conexiones.c: In function ‘atiendeCpu’:
+../src/conexiones.c:70:3: warning: implicit declaration of function ‘uint32_serializer’ [-Wimplicit-function-declaration]
+   char *serialized = uint32_serializer(notificacion_tamanioStack,
+   ^
+../src/conexiones.c:70:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+   char *serialized = uint32_serializer(notificacion_tamanioStack,
+                      ^
+../src/conexiones.c: In function ‘operacionPCB’:
+../src/conexiones.c:166:2: warning: implicit declaration of function ‘deserializer_pcb’ [-Wimplicit-function-declaration]
+  nPCB= deserializer_pcb(mensaje);
+  ^
+../src/conexiones.c:166:6: warning: assignment makes pointer from integer without a cast [enabled by default]
+  nPCB= deserializer_pcb(mensaje);
+      ^
+../src/conexiones.c: In function ‘queue_get’:
+../src/conexiones.c:269:6: warning: unused variable ‘encontro’ [-Wunused-variable]
+  int encontro=-1;
+      ^
+../src/conexiones.c: In function ‘sockets_select’:
+../src/conexiones.c:410:6: warning: passing argument 2 of ‘list_add’ makes pointer from integer without a cast [enabled by default]
+      list_add(listaConsola, socketNuevo);
+      ^
+In file included from /usr/include/commons/collections/queue.h:20:0,
+                 from /home/utnso/tp-2017-1c-The-Revenge/tr_library/Sockets/socket.h:15,
+                 from /home/utnso/tp-2017-1c-The-Revenge/tr_library/Sockets/SocketsCliente.h:20,
+                 from ../src/Kernel.h:14,
+                 from ../src/conexiones.h:11,
+                 from ../src/conexiones.c:9:
+/usr/include/commons/collections/list.h:51:6: note: expected ‘void *’ but argument is of type ‘int’
+  int list_add(t_list *, void *element);
+      ^
+../src/conexiones.c:588:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+       nPCB = deserializer_pcb(mensaje);
+            ^
+../src/conexiones.c:643:7: warning: implicit declaration of function ‘operacionesHeap’ [-Wimplicit-function-declaration]
+       operacionesHeap(i, header.length, ALOCAR,
+       ^
+../src/conexiones.c:319:18: warning: unused variable ‘syscalls’ [-Wunused-variable]
+  t_cantSyscalls* syscalls;
+                  ^
+../src/conexiones.c:317:9: warning: variable ‘proceso’ set but not used [-Wunused-but-set-variable]
+  t_PCB* proceso;
+         ^
+../src/conexiones.c:313:6: warning: unused variable ‘j’ [-Wunused-variable]
+  int j;
+      ^
+../src/conexiones.c: In function ‘pedirPaginaAMemoria’:
+../src/conexiones.c:793:2: warning: implicit declaration of function ‘solicitudPaginas_serializer’ [-Wimplicit-function-declaration]
+  char*solicitudPagina= solicitudPaginas_serializer(solicitud,&header.length);
+  ^
+../src/conexiones.c:793:24: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char*solicitudPagina= solicitudPaginas_serializer(solicitud,&header.length);
+                        ^
+../src/conexiones.c: In function ‘enviarCodigoAMemoria’:
+../src/conexiones.c:851:3: warning: implicit declaration of function ‘solicitudEscritura_serializer’ [-Wimplicit-function-declaration]
+   char * notificacion_solicitudEscritura= solicitudEscritura_serializer(solicitudEscritura,&header.length);
+   ^
+../src/conexiones.c:851:43: warning: initialization makes pointer from integer without a cast [enabled by default]
+   char * notificacion_solicitudEscritura= solicitudEscritura_serializer(solicitudEscritura,&header.length);
+                                           ^
+../src/conexiones.c: In function ‘recibirTamanio’:
+../src/conexiones.c:879:35: warning: initialization makes pointer from integer without a cast [enabled by default]
+  uint32_t *notificacion_tamanio = uint32_deserializer(respuesta);
+                                   ^
+../src/conexiones.c: In function ‘recibirProgramaAnsisop’:
+../src/conexiones.c:910:11: warning: unused variable ‘header’ [-Wunused-variable]
+  header_t header;
+           ^
+../src/conexiones.c: In function ‘enviarPid’:
+../src/conexiones.c:937:21: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized = uint32_serializer(notificacion_pid, &header.length);
+                     ^
+../src/conexiones.c: In function ‘recibirPCB’:
+../src/conexiones.c:988:7: warning: assignment makes pointer from integer without a cast [enabled by default]
+   pcb = deserializer_pcb(mensaje);
+       ^
+../src/conexiones.c: In function ‘enviarFinalizarProgramaAMemoria’:
+../src/conexiones.c:1010:21: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized = uint32_serializer(notificacion_pid, &header.length);
+                     ^
+Finished building: ../src/conexiones.c
+ 
+Building file: ../src/configInicialKernel.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configInicialKernel.d" -MT"src/configInicialKernel.d" -o "src/configInicialKernel.o" "../src/configInicialKernel.c"
+../src/configInicialKernel.c: In function ‘leerArchivoConfiguracion’:
+../src/configInicialKernel.c:95:19: warning: assignment from incompatible pointer type [enabled by default]
+    arch->SEM_INIT = config_get_array_value(config, "SEM_INIT");
+                   ^
+../src/configInicialKernel.c:121:20: warning: assignment from incompatible pointer type [enabled by default]
+     arch->SEM_INIT =config_get_array_value(config, "SEM_INIT");
+                    ^
+../src/configInicialKernel.c:122:5: warning: passing argument 2 of ‘crearSemaforos’ from incompatible pointer type [enabled by default]
+     crearSemaforos(arch->SEM_IDS,arch->SEM_INIT);
+     ^
+In file included from ../src/configInicialKernel.h:12:0,
+                 from ../src/configInicialKernel.c:9:
+../src/Kernel.h:293:6: note: expected ‘char **’ but argument is of type ‘int *’
+ void crearSemaforos(char **semIds, char **semInit);
+      ^
+Finished building: ../src/configInicialKernel.c
+ 
+Building file: ../src/consolaKernel.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/consolaKernel.d" -MT"src/consolaKernel.d" -o "src/consolaKernel.o" "../src/consolaKernel.c"
+../src/consolaKernel.c: In function ‘operacionKernel’:
+../src/consolaKernel.c:269:5: warning: implicit declaration of function ‘enviarPid’ [-Wimplicit-function-declaration]
+     int bytes= enviarPid(pcb->socket, pcb->PID,FINALIZAR_PROGRAMA);
+     ^
+../src/consolaKernel.c:278:4: warning: implicit declaration of function ‘terminacionIrregular’ [-Wimplicit-function-declaration]
+    terminacionIrregular(pcb, exitcode);
+    ^
+../src/consolaKernel.c:171:11: warning: unused variable ‘header’ [-Wunused-variable]
+  header_t header; //NUEVO
+           ^
+../src/consolaKernel.c: In function ‘consolaKernel’:
+../src/consolaKernel.c:393:4: warning: implicit declaration of function ‘tieneElPidParaColas’ [-Wimplicit-function-declaration]
+    }else if(tieneElPidParaColas(colaNew, pid) != -1)
+    ^
+../src/consolaKernel.c:396:6: warning: implicit declaration of function ‘queue_get’ [-Wimplicit-function-declaration]
+      t_PCB* nPCB=queue_get(colaNew,pid);
+      ^
+../src/consolaKernel.c:396:18: warning: initialization makes pointer from integer without a cast [enabled by default]
+      t_PCB* nPCB=queue_get(colaNew,pid);
+                  ^
+../src/consolaKernel.c:399:6: warning: implicit declaration of function ‘queue_add_index’ [-Wimplicit-function-declaration]
+      queue_add_index(colaNew,nPCB,indice);
+      ^
+../src/consolaKernel.c:310:6: warning: variable ‘cantLeido’ set but not used [-Wunused-but-set-variable]
+  int cantLeido,bytes;
+      ^
+Finished building: ../src/consolaKernel.c
+ 
+Building file: ../src/planificador.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/planificador.d" -MT"src/planificador.d" -o "src/planificador.o" "../src/planificador.c"
+../src/planificador.c: In function ‘crearHiloPlanificacion’:
+../src/planificador.c:16:2: warning: passing argument 4 of ‘pthread_create’ makes pointer from integer without a cast [enabled by default]
+  socketMemoria);
+  ^
+In file included from ../src/Kernel.h:23:0,
+                 from ../src/planificador.h:15,
+                 from ../src/planificador.c:8:
+/usr/include/pthread.h:244:12: note: expected ‘void * __restrict__’ but argument is of type ‘int’
+ extern int pthread_create (pthread_t *__restrict __newthread,
+            ^
+../src/planificador.c: In function ‘algoritmo’:
+../src/planificador.c:93:29: warning: assignment from incompatible pointer type [enabled by default]
+      proc->punteroColaPlanif=colaExec;
+                             ^
+../src/planificador.c:96:29: warning: assignment from incompatible pointer type [enabled by default]
+      lPCB->punteroColaPlanif=colaExec;
+                             ^
+../src/planificador.c:34:8: warning: unused variable ‘cantReady’ [-Wunused-variable]
+  int i,cantReady;
+        ^
+../src/planificador.c:33:9: warning: unused variable ‘cpu’ [-Wunused-variable]
+  t_cpu *cpu;
+         ^
+../src/planificador.c: In function ‘verificarAbortados’:
+../src/planificador.c:210:41: warning: assignment from incompatible pointer type [enabled by default]
+    pcbBloqueado->pcb->punteroColaPlanif = colaReady;
+                                         ^
+../src/planificador.c:214:28: warning: assignment from incompatible pointer type [enabled by default]
+    lPCB->punteroColaPlanif = colaReady;
+                            ^
+../src/planificador.c: In function ‘planificarNuevos’:
+../src/planificador.c:261:28: warning: assignment from incompatible pointer type [enabled by default]
+     aux->punteroColaPlanif = colaReady;
+                            ^
+../src/planificador.c: In function ‘planificar’:
+../src/planificador.c:383:9: warning: unused variable ‘cpuLista’ [-Wunused-variable]
+  t_cpu *cpuLista;
+         ^
+../src/planificador.c:382:15: warning: unused variable ‘i’ [-Wunused-variable]
+  int cantCPU, i;
+               ^
+../src/planificador.c:382:6: warning: unused variable ‘cantCPU’ [-Wunused-variable]
+  int cantCPU, i;
+      ^
+../src/planificador.c: In function ‘envioPCBACpuDisponible’:
+../src/planificador.c:564:2: warning: implicit declaration of function ‘serializer_pcb’ [-Wimplicit-function-declaration]
+  char * serialized = serializer_pcb(unPCB,&header.length);
+  ^
+../src/planificador.c:564:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char * serialized = serializer_pcb(unPCB,&header.length);
+                      ^
+../src/planificador.c: In function ‘pcbAColaExit’:
+../src/planificador.c:607:4: warning: implicit declaration of function ‘enviarFinalizarProgramaAMemoria’ [-Wimplicit-function-declaration]
+    if (enviarFinalizarProgramaAMemoria(socketMemoria, pcb->PID) <= 0) {
+    ^
+Finished building: ../src/planificador.c
+ 
+Building target: Kernel
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "Kernel"  ./src/Kernel.o ./src/capaFileSystem.o ./src/capaMemoria.o ./src/conexiones.o ./src/configInicialKernel.o ./src/consolaKernel.o ./src/planificador.o   -ltr_library -lpthread -lcommons -lparser-ansisop
+Finished building target: Kernel
+ 
+08:13:56 **** Clean-only build of configuration Debug for project Consola ****
+make clean 
+rm -rf  ./src/Consola.o ./src/configuracionInicial.o  ./src/Consola.d ./src/configuracionInicial.d  Consola
+ 
+08:13:56 **** Build of configuration Debug for project Consola ****
+make all 
+Building file: ../src/Consola.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Consola.d" -MT"src/Consola.d" -o "src/Consola.o" "../src/Consola.c"
+../src/Consola.c: In function ‘desconectarConsola’:
+../src/Consola.c:125:6: warning: unused variable ‘cantHilos’ [-Wunused-variable]
+  int cantHilos;
+      ^
+../src/Consola.c: In function ‘gestionarConsola’:
+../src/Consola.c:166:8: warning: variable ‘cantLeido’ set but not used [-Wunused-but-set-variable]
+  int i,cantLeido,pid;
+        ^
+../src/Consola.c:166:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i,cantLeido,pid;
+      ^
+../src/Consola.c: In function ‘recvPid’:
+../src/Consola.c:278:6: warning: unused variable ‘bytes2’ [-Wunused-variable]
+  int bytes2=recv(socket, spid, length, MSG_WAITALL);
+      ^
+../src/Consola.c: In function ‘recvPrograma’:
+../src/Consola.c:292:6: warning: unused variable ‘bytes2’ [-Wunused-variable]
+  int bytes2 = recv(socket, sprog, length, MSG_WAITALL);
+      ^
+../src/Consola.c: In function ‘main’:
+../src/Consola.c:612:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;
+      ^
+../src/Consola.c: In function ‘enviar’:
+../src/Consola.c:486:2: warning: ‘cantEnviado’ is used uninitialized in this function [-Wuninitialized]
+  return cantEnviado;
+  ^
+Finished building: ../src/Consola.c
+ 
+Building file: ../src/configuracionInicial.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configuracionInicial.d" -MT"src/configuracionInicial.d" -o "src/configuracionInicial.o" "../src/configuracionInicial.c"
+Finished building: ../src/configuracionInicial.c
+ 
+Building target: Consola
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "Consola"  ./src/Consola.o ./src/configuracionInicial.o   -ltr_library -lpthread -lcommons
+Finished building target: Consola
+ 
+08:13:57 **** Clean-only build of configuration Debug for project CPU ****
+make clean 
+rm -rf  ./src/CPU.o ./src/configCpu.o  ./src/CPU.d ./src/configCpu.d  CPU
+ 
+08:13:57 **** Build of configuration Debug for project CPU ****
+make all 
+Building file: ../src/CPU.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPU.d" -MT"src/CPU.d" -o "src/CPU.o" "../src/CPU.c"
+In file included from ../src/CPU.c:8:0:
+../src/CPU.h:45:1: warning: parameter names (without types) in function declaration [enabled by default]
+ int recibirMensaje(socket);
+ ^
+../src/CPU.h:46:1: warning: parameter names (without types) in function declaration [enabled by default]
+ int recibirMensajeInicialDeMemoria(socket);
+ ^
+../src/CPU.h:52:1: warning: parameter names (without types) in function declaration [enabled by default]
+ char * recibirInstruccion(socket);
+ ^
+../src/CPU.c: In function ‘main’:
+../src/CPU.c:66:2: warning: implicit declaration of function ‘aceptarConexion’ [-Wimplicit-function-declaration]
+  if(aceptarConexion(socketMemoria,HANDSHAKE_MEMORIA)==0){
+  ^
+../src/CPU.c: In function ‘recibirMensaje’:
+../src/CPU.c:160:4: warning: pointer targets in passing argument 3 of ‘recibirTamanio’ differ in signedness [-Wpointer-sign]
+    recibirTamanio(socket,header.length,&iTamStack);
+    ^
+In file included from ../src/CPU.c:8:0:
+../src/CPU.h:43:6: note: expected ‘int32_t *’ but argument is of type ‘uint32_t *’
+ void recibirTamanio(int socket, uint32_t tamanio, int32_t * elemento);
+      ^
+../src/CPU.c: In function ‘recibirMensajeInicialDeMemoria’:
+../src/CPU.c:184:4: warning: pointer targets in passing argument 3 of ‘recibirTamanio’ differ in signedness [-Wpointer-sign]
+    recibirTamanio(socket,header.length,&tamanioPagina);
+    ^
+In file included from ../src/CPU.c:8:0:
+../src/CPU.h:43:6: note: expected ‘int32_t *’ but argument is of type ‘uint32_t *’
+ void recibirTamanio(int socket, uint32_t tamanio, int32_t * elemento);
+      ^
+Finished building: ../src/CPU.c
+ 
+Building file: ../src/configCpu.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/configCpu.d" -MT"src/configCpu.d" -o "src/configCpu.o" "../src/configCpu.c"
+In file included from ../src/configCpu.h:11:0,
+                 from ../src/configCpu.c:8:
+../src/CPU.h:45:1: warning: parameter names (without types) in function declaration [enabled by default]
+ int recibirMensaje(socket);
+ ^
+../src/CPU.h:46:1: warning: parameter names (without types) in function declaration [enabled by default]
+ int recibirMensajeInicialDeMemoria(socket);
+ ^
+../src/CPU.h:52:1: warning: parameter names (without types) in function declaration [enabled by default]
+ char * recibirInstruccion(socket);
+ ^
+Finished building: ../src/configCpu.c
+ 
+Building file: ../src/primitivasAnsisop.c
+Invoking: GCC C Compiler
+gcc -I"/home/utnso/tp-2017-1c-The-Revenge/tr_library" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/primitivasAnsisop.d" -MT"src/primitivasAnsisop.d" -o "src/primitivasAnsisop.o" "../src/primitivasAnsisop.c"
+In file included from ../src/primitivasAnsisop.h:22:0,
+                 from ../src/primitivasAnsisop.c:8:
+../src/CPU.h:45:1: warning: parameter names (without types) in function declaration [enabled by default]
+ int recibirMensaje(socket);
+ ^
+../src/CPU.h:46:1: warning: parameter names (without types) in function declaration [enabled by default]
+ int recibirMensajeInicialDeMemoria(socket);
+ ^
+../src/CPU.h:52:1: warning: parameter names (without types) in function declaration [enabled by default]
+ char * recibirInstruccion(socket);
+ ^
+../src/primitivasAnsisop.c: In function ‘obtenerPosicionVariable’:
+../src/primitivasAnsisop.c:52:8: warning: unused variable ‘lineaArg’ [-Wunused-variable]
+    int lineaArg = identificador_variable - '0';
+        ^
+../src/primitivasAnsisop.c: In function ‘asignar’:
+../src/primitivasAnsisop.c:82:2: warning: implicit declaration of function ‘solicitudEscritura_serializer’ [-Wimplicit-function-declaration]
+  char * serializer = solicitudEscritura_serializer(mensaje,&header.length);
+  ^
+../src/primitivasAnsisop.c:82:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char * serializer = solicitudEscritura_serializer(mensaje,&header.length);
+                      ^
+../src/primitivasAnsisop.c: In function ‘dereferenciar’:
+../src/primitivasAnsisop.c:123:2: warning: implicit declaration of function ‘solicitudLectura_serializer’ [-Wimplicit-function-declaration]
+  char *serializer=solicitudLectura_serializer(solicitar,&header.length);
+  ^
+../src/primitivasAnsisop.c:123:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serializer=solicitudLectura_serializer(solicitar,&header.length);
+                   ^
+../src/primitivasAnsisop.c: In function ‘obtenerValorCompartida’:
+../src/primitivasAnsisop.c:255:2: warning: implicit declaration of function ‘serializer_opVarCompartida’ [-Wimplicit-function-declaration]
+  char *serialized =serializer_opVarCompartida(varCompartida,&header.length);
+  ^
+../src/primitivasAnsisop.c:255:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized =serializer_opVarCompartida(varCompartida,&header.length);
+                    ^
+../src/primitivasAnsisop.c:276:4: warning: implicit declaration of function ‘deserializer_opVarCompartida’ [-Wimplicit-function-declaration]
+    t_op_varCompartida *varCompartida = deserializer_opVarCompartida(mensaje);
+    ^
+../src/primitivasAnsisop.c:276:40: warning: initialization makes pointer from integer without a cast [enabled by default]
+    t_op_varCompartida *varCompartida = deserializer_opVarCompartida(mensaje);
+                                        ^
+../src/primitivasAnsisop.c: In function ‘asignarValorCompartida’:
+../src/primitivasAnsisop.c:298:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char * serializer = serializer_opVarCompartida(varCompartida,&header.length);
+                      ^
+../src/primitivasAnsisop.c: In function ‘retornar’:
+../src/primitivasAnsisop.c:448:11: warning: unused variable ‘NuevoContextoEjecucion’ [-Wunused-variable]
+  t_stack *NuevoContextoEjecucion=list_get(pcb->indiceStack,pcb->indiceContextoEjecucionActualStack);
+           ^
+../src/primitivasAnsisop.c: In function ‘ansisop_escribir’:
+../src/primitivasAnsisop.c:469:2: warning: implicit declaration of function ‘operacionDescriptorArchivo_serializer’ [-Wimplicit-function-declaration]
+  char *serialized=operacionDescriptorArchivo_serializer(escribirDescriptorArchivo,&header.length);
+  ^
+../src/primitivasAnsisop.c:469:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized=operacionDescriptorArchivo_serializer(escribirDescriptorArchivo,&header.length);
+                   ^
+../src/primitivasAnsisop.c: In function ‘ansisop_leer’:
+../src/primitivasAnsisop.c:518:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized=operacionDescriptorArchivo_serializer(leerDescriptorArchivo,&header.length);
+                   ^
+../src/primitivasAnsisop.c: In function ‘reservar’:
+../src/primitivasAnsisop.c:618:2: warning: implicit declaration of function ‘solicitudHeap_serializer’ [-Wimplicit-function-declaration]
+  char * serializer= solicitudHeap_serializer(datosHeap,&header.length);
+  ^
+../src/primitivasAnsisop.c:618:21: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char * serializer= solicitudHeap_serializer(datosHeap,&header.length);
+                     ^
+../src/primitivasAnsisop.c:627:3: warning: return makes integer from pointer without a cast [enabled by default]
+   return NULL;
+   ^
+../src/primitivasAnsisop.c:636:5: warning: implicit declaration of function ‘uint32_deserializer’ [-Wimplicit-function-declaration]
+     puntero = uint32_deserializer(serializer);
+     ^
+../src/primitivasAnsisop.c:636:13: warning: assignment makes pointer from integer without a cast [enabled by default]
+     puntero = uint32_deserializer(serializer);
+             ^
+../src/primitivasAnsisop.c:642:5: warning: return makes integer from pointer without a cast [enabled by default]
+     return NULL;
+     ^
+../src/primitivasAnsisop.c:646:5: warning: return makes integer from pointer without a cast [enabled by default]
+     return NULL;
+     ^
+../src/primitivasAnsisop.c:650:5: warning: return makes integer from pointer without a cast [enabled by default]
+     return NULL;
+     ^
+../src/primitivasAnsisop.c: In function ‘liberar’:
+../src/primitivasAnsisop.c:668:21: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char * serializer= solicitudHeap_serializer(datosHeap,&header.length);
+                     ^
+../src/primitivasAnsisop.c: In function ‘abrir’:
+../src/primitivasAnsisop.c:713:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized=operacionDescriptorArchivo_serializer(abrirArchivo,&header.length);
+                   ^
+../src/primitivasAnsisop.c:731:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+    puntero = uint32_deserializer(serializer);
+            ^
+../src/primitivasAnsisop.c: In function ‘borrar’:
+../src/primitivasAnsisop.c:754:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized=operacionDescriptorArchivo_serializer(borrarArchivo,&header.length);
+                   ^
+../src/primitivasAnsisop.c: In function ‘cerrar’:
+../src/primitivasAnsisop.c:789:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized=operacionDescriptorArchivo_serializer(cerrarArchivo,&header.length);
+                   ^
+../src/primitivasAnsisop.c: In function ‘moverCursor’:
+../src/primitivasAnsisop.c:829:19: warning: initialization makes pointer from integer without a cast [enabled by default]
+  char *serialized=operacionDescriptorArchivo_serializer(moverCursor,&header.length);
+                   ^
+../src/primitivasAnsisop.c:818:8: warning: unused variable ‘serializer’ [-Wunused-variable]
+  char* serializer;
+        ^
+../src/primitivasAnsisop.c: In function ‘obtenerValorCompartida’:
+../src/primitivasAnsisop.c:284:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/primitivasAnsisop.c: In function ‘asignarValorCompartida’:
+../src/primitivasAnsisop.c:322:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/primitivasAnsisop.c: In function ‘abrir’:
+../src/primitivasAnsisop.c:740:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/primitivasAnsisop.c: In function ‘llamarSinRetorno’:
+../src/primitivasAnsisop.c:341:4: warning: ‘nuevaLineaStackEjecucionActual’ is used uninitialized in this function [-Wuninitialized]
+  if(nuevaLineaStackEjecucionActual==NULL){
+    ^
+Finished building: ../src/primitivasAnsisop.c
+ 
+Building target: CPU
+Invoking: GCC C Linker
+gcc -L"/home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug" -o "CPU"  ./src/CPU.o ./src/configCpu.o ./src/primitivasAnsisop.o   -ltr_library -lcommons -lparser-ansisop
+Finished building target: CPU
+ 

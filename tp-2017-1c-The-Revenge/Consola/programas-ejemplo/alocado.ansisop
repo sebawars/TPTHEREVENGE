@@ -1,9 +1,0 @@
-#!/usr/bin/ansisop
-
-begin
-	variables a,b
-	:ready
-	alocar a 50
-	alocar b 60
-	goto ready
-end

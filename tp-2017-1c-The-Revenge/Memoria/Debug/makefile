@@ -26,7 +26,7 @@ endif
 all: Memoria
 
 dependents:
-	-cd /home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug && $(MAKE) clean all
+	-cd /home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug && $(MAKE) all
 
 # Tool invocations
 Memoria: $(OBJS) $(USER_OBJS) /home/utnso/tp-2017-1c-The-Revenge/tr_library/Debug/libtr_library.so

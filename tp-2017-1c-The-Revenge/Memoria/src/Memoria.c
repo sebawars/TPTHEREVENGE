@@ -494,6 +494,9 @@ uint32_t darDeBajaEstructurasAdministrativas(uint32_t pid) { //SIN SINCRO
 	uint32_t encontrado = -1;
 
 	estructuraAdministrativa* aux = memoria + cantidadFramesAdministracion * sizeof(estructuraAdministrativa);
+
+	sleep(0.001*metadata.retardo_memoria);
+
 	for (i = 0; i < cantidadFramesDatos; i++)
 	{
 		if (aux->pid == pid)

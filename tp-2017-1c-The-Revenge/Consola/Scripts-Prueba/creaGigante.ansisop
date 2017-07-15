@@ -3,7 +3,7 @@ begin
 
   # reservo 65 para no buscar fuera del archivo
   t=65
-  i=56
+  i=22
   # reservo el bloque que voy a copiar
   alocar a t
   *a=60

@@ -346,6 +346,7 @@ uint32_t asignarPaginasProceso(uint32_t pid, uint32_t cantidadPaginas) //CON SIN
 		else
 			aux = (paginasXproceso*)obtenerEntradaPagXProc(pid);
 
+		sleep(0.001*metadata.retardo_memoria);
 
 		while (cantidadAAsignar) {
 			nroPag = aux->cantidadPags;
